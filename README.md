@@ -1,4 +1,15 @@
-# Omni Plataform
+# MEAN Login
+
+Awesome login app developed with:
+
+M [MongoDB](https://www.mongodb.com/)
+
+E [ExpressJs](https://expressjs.com/)
+
+A [Angular 4](https://angular.io/)
+
+N [NodeJs](https://nodejs.org)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 

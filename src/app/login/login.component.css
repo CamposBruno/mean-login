@@ -1,0 +1,28 @@
+.invalid-feedback{
+    color: red;
+    padding-top: 5px;
+}
+
+.ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+}
+
+.ng-valid.ng-touched:not(form){
+    border: 1px solid green;
+}
+
+.loader{
+    border: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: .8;
+    background-color: white;
+}
+
+.login-container{
+    padding: 100px 0;
+}

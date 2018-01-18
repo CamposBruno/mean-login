@@ -1,0 +1,11 @@
+{
+    "mongodb" : {
+        "uri" : "mongodb://localhost:27017/meanLogin"
+    },
+    "server" : {
+        "api" : {
+            "url" : "http://localhost/api/",
+            "secret" : "4e6b2d4f09798dffd53d"
+        }
+    }
+}

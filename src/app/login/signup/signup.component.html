@@ -1,0 +1,54 @@
+<div class="auth-page">
+
+  <div class="animated fadeInDown auth_box">
+    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 auth_login_bg bg-theme">
+        <div class="auth_login bg-white">
+          <h3 class="no-margin-t">Sign up</h3>
+          <form #f="ngForm" action="#"  (ngSubmit)="onSubmit(f)" autocomplete="off" method="POST">
+            <div class="form-group margin-t-lg">
+              <input type="text" required [(ngModel)]="signup.firstName" 
+                name="firstName" class="form-control padding-r-xlg" 
+                placeholder="First Name" autofocus #txFirstName="ngModel"/>
+                <div *ngIf="!txFirstName.valid && txFirstName.touched" 
+                  class="invalid-feedback" >
+                  Please inform First Name
+                </div>
+            </div>
+            <div class="form-group margin-t-lg">
+              <input type="text" required [(ngModel)]="signup.lastName" 
+              name="lastName"  class="form-control padding-r-xlg" 
+              placeholder="Last Name" #txlastName="ngModel"/>
+              <div *ngIf="!txlastName.valid && txlastName.touched" 
+                class="invalid-feedback" >
+                Please inform Last Name
+              </div>
+            </div>
+            <div class="form-group margin-t-lg">
+              <input type="text required" [(ngModel)]="signup.email" 
+              name="email" required class="form-control padding-r-xlg" 
+              placeholder="Email" #txEmail="ngModel" />
+              <div *ngIf="!txEmail.valid && txEmail.touched" 
+                class="invalid-feedback" >
+                Please inform valid Email 
+              </div>
+            </div>
+            <div class="form-group margin-t-lg">
+              <input type="password" required [(ngModel)]="signup.password" 
+              name="password" class="form-control padding-r-xlg" 
+              placeholder="Password" #txPassword="ngModel" />
+              <div *ngIf="!txPassword.valid && txPassword.touched" 
+                class="invalid-feedback" >
+                Please inform valid Password 
+              </div>
+            </div>
+            <div class="padding-t-b-lg">
+              <input [disabled]="!f.valid" class="btn btn-lg btn-primary btn-theme btn-block" type="submit" value="Sign up" />
+            </div>
+            <div class="auth_signupbutton text-center margin-t-xlg">
+              <p>Have an account? <a routerLink="/login" class="text-theme">&nbsp;Login now!</a></p>	
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>

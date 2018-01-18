@@ -1,0 +1,47 @@
+<div class="auth-page">
+  <div class="animated fadeInDown auth_box">
+    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 login-container">
+        <div class="auth_login bg-white">
+          <h3 class="no-margin-t">{{ pageName }}</h3>
+          <form #f="ngForm" (ngSubmit)="onSubmit(f)" action="#" autocomplete="off" method="POST">
+            <div class="row">
+              <div class="col-xs-12 col-md-12 col-sm-12">
+                <div class="form-group margin-t-lg">
+                  
+                  <input type="text" required name="email" 
+                    [(ngModel)]="loginCandidate.email"  class="form-control padding-r-xlg" 
+                      placeholder="Email" autofocus #txEmail="ngModel"/>
+
+                  <div *ngIf="!txEmail.valid && txEmail.touched" 
+                    class="invalid-feedback">
+                    Please inform email
+                  </div>
+                </div>
+
+                <div class="form-group margin-t-lg">
+                  
+                  <input  type="password" required name="password" 
+                    [(ngModel)]="loginCandidate.password" class="form-control padding-r-xlg"
+                     placeholder="password" #txPassword="ngModel"/>
+
+                  <div *ngIf="!txPassword.valid && txPassword.touched" 
+                    class="invalid-feedback">
+                    Please inform password
+                  </div>
+
+                </div>
+                <input type="submit" [disabled]="!f.valid"  value="Login"  class="btn btn-lg btn-primary btn-theme btn-block margin-t-lg" />
+              </div>
+            </div>
+          </form>
+          <div class="row auth_signupbutton text-center margin-t-xlg">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <p>Don't have an account? <a routerLink="/signup" class="text-theme">&nbsp;Sign up now!</a></p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+
+</div>

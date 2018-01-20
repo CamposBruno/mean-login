@@ -4,7 +4,11 @@
   "license": "MIT",
   "engines" : {
     "node": "^6.11.1",
+<<<<<<< HEAD
     "npm": "^3.10.9"
+=======
+    "npm": "^3.10.9",
+>>>>>>> e8bd9e059a0e4d46e7860858f8e1b2456cbb3e7b
   },
   "scripts": {
     "ng": "ng",

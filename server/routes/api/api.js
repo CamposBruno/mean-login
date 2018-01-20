@@ -7,7 +7,7 @@ const config = require('config');
 const HTTP = require('http');
 const usersRouter = require('./users');
 
-const uri = process.env.MONGO_URI || config.get('mongodb.uri'); 
+const uri = process.env.MONGODB_URI || config.get('mongodb.uri'); 
 
 mongoose.promise = global.promise;
 

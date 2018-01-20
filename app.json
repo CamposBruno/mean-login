@@ -1,0 +1,18 @@
+{
+  "name": "MEAN Login",
+  "description": "Awesome MEAN Stack Login application",
+  "keywords": [
+    "MEAN",
+    "Login",
+    "Angular",
+    "NodeJs"
+  ],
+  "repository": "https://github.com/CamposBruno/mean-login",
+  "logo": "https://seeklogo.com/images/M/mean-logo-608A598807-seeklogo.com.png",
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGODB"
+    }
+  ]
+}

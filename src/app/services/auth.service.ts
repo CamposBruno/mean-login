@@ -15,7 +15,7 @@ export class AuthService {
 
   _auth(candidate: Signup) {
     this.usuarioAutenticado = true;
-    const url = `http://localhost:3000/api/users/login`;
+    const url = `/api/users/login`;
     const headers = new Headers({'Content-Type' : 'application/json'});
 
     return this.http.post(url, candidate, {headers : headers})
@@ -29,7 +29,7 @@ export class AuthService {
 
   usuarioEstaAutenticado(): Observable<boolean> | boolean {
     const token = localStorage.getItem('token') ? `?token=${localStorage.getItem('token')}` : '';
-    const url = `http://localhost:3000/api/users/authenticated/${token}`;
+    const url = `/api/users/authenticated/${token}`;
     return this.http.get(url)
     .map(() => true)
     .catch(() => {

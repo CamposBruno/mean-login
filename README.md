@@ -2,10 +2,6 @@
 
 Awesome Mongo, Express, Angular(4) and Node login app. Simple and scalable fullstack js application
 
-...and Bootstrap
-
-## Live Demo
-https://fast-stream-14685.herokuapp.com
 
 ## Getting Started
 
